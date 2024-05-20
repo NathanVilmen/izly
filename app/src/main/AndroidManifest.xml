@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_izly"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_izly_rond"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Izly"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.MesInformationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AddCarteBancaireActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.RGPDActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.InscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.RechargementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PaiementQrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PageUtilisateurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.HomeActivity" />
+    </application>
+
+</manifest>
