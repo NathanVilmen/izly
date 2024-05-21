@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.FirstFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bienvenue_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.457" />
+
+        <ImageView
+            android:id="@+id/cercle_bleu_home_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_blue_circle"
+            app:layout_constraintBottom_toTopOf="@+id/vos_avantages_home_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/solde_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="+ 4,24 €"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintEnd_toEndOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintStart_toStartOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintTop_toTopOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/plus_bouton_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_plus_green"
+            app:layout_constraintEnd_toEndOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintTop_toTopOf="@+id/cercle_bleu_home_img" />
+
+        <Button
+            android:id="@+id/payer_bouton_home"
+            android:layout_width="111dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/payer"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintEnd_toEndOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintStart_toStartOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintTop_toBottomOf="@+id/cercle_bleu_home_img"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/logo_qr_code_home"
+            android:layout_width="41dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_qr_code_white"
+            app:layout_constraintBottom_toBottomOf="@+id/payer_bouton_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.418"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/payer_bouton_home" />
+
+        <ImageView
+            android:id="@+id/logo_izly_home"
+            android:layout_width="69dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/logo_izly"
+            android:src="@drawable/logo_izly_rond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/bouton_account_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="350dp"
+            android:contentDescription="@string/logo_izly"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_account_rond"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/vos_avantages_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/vos_avantages"
+            app:layout_constraintBottom_toTopOf="@+id/vous_beneficiez_home_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/payer_bouton_home" />
+
+        <TextView
+            android:id="@+id/vous_beneficiez_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/vous_beneficiez_dun_tarif_boursier"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vos_avantages_home_tv" />
+
+        <ImageButton
+            android:id="@+id/logo_info_home"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_info_bleu"
+            app:layout_constraintBottom_toBottomOf="@+id/vous_beneficiez_home_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/vos_avantages_home_tv"
+            app:layout_constraintTop_toTopOf="@+id/vos_avantages_home_tv"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/historique_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/historique_des_transactions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vous_beneficiez_home_tv" />
+
+        <TextView
+            android:id="@+id/etat_paiement_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_italic"
+            android:text="Succès                En Attente              Refusé"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/historique_home_tv" />
+
+        <ImageView
+            android:id="@+id/ic_rond_vert_home"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_rond_vert"
+            app:layout_constraintBottom_toBottomOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintEnd_toStartOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintTop_toTopOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/ic_rond_orange_home"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_rond_orange"
+            app:layout_constraintBottom_toBottomOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintStart_toStartOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintTop_toTopOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/ic_rond_rouge_home"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_rond_rouge"
+            app:layout_constraintBottom_toBottomOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintStart_toStartOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintTop_toTopOf="@+id/etat_paiement_home_tv"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_rechargements_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etat_paiement_home_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

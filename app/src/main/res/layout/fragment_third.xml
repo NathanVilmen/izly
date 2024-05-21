@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ThirdFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/img_fond_bleu_actus"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_bg_bleu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_izly_actus"
+            android:layout_width="99dp"
+            android:layout_height="51dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_izly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/decouvrez_actus_actus_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/titre_actu"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_fond_bleu_actus" />
+
+        <ImageView
+            android:id="@+id/logo_actu"
+            android:layout_width="89dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_actu_noir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/decouvrez_actus_actus_tv" />
+
+        <TextView
+            android:id="@+id/les_crous_sengagent_actus_tv"
+            android:layout_width="161dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/les_crous_s_engagent"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/logo_actu"
+            app:layout_constraintTop_toTopOf="@+id/logo_actu" />
+
+        <TextView
+            android:id="@+id/text_actu1_tv"
+            android:layout_width="263dp"
+            android:layout_height="70dp"
+            android:text="@string/texte_actu1"
+            app:layout_constraintStart_toEndOf="@+id/logo_actu"
+            app:layout_constraintTop_toBottomOf="@+id/les_crous_sengagent_actus_tv" />
+
+        <ImageView
+            android:id="@+id/img_engagement_actu"
+            android:layout_width="323dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/img_engagement_izly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_actu1_tv" />
+
+        <ImageView
+            android:id="@+id/img_question_actu"
+            android:layout_width="415dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/img_question_izly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_engagement_actu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

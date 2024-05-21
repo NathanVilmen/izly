@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Izly</string>
+    <string name="main_menu_title_accueil">Accueil</string>
+    <string name="main_menu_title_recharger">Recharger</string>
+    <string name="main_menu_title_actus">Actus</string>
+    <string name="main_menu_title_parametres">Paramètres</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bienvenue_sur_izly">Bienvenue sur Izly !</string>
+    <string name="connecte_toi">Connecte-toi :</string>
+    <string name="identifiant">Identifiant :</string>
+    <string name="numero_telephone">07 00 44 55 66</string>
+    <string name="code_secret">Code secret :</string>
+    <string name="hint_code_secret">123456</string>
+    <string name="exemple_code_secret">123456</string>
+    <string name="connexion">Connexion</string>
+    <string name="pas_encore_inscrit">Pas encore inscrit(e)?</string>
+    <string name="inscris_toi_ici">Inscris-toi ici.</string>
+    <string name="mot_de_passe_oublie">Mot de passe oublié</string>
+    <string name="logo_izly">Logo Izly</string>
+    <string name="vos_avantages">Vos avantages :</string>
+    <string name="vous_beneficiez_dun_tarif_boursier">Vous bénéficiez d\'un tarif boursier.</string>
+    <string name="payer">Payer</string>
+    <string name="historique_des_recharges">Historique des recharges</string>
+    <string name="veuillez_choisir_un_moyen_de_rechargement">Veuillez choisir un moyen de rechargement:</string>
+    <string name="virement_instantane_partir_de_5_euros">Virement instantané (à partir de 5€)</string>
+    <string name="carte_bancaire">Carte bancaire</string>
+    <string name="rechargement_par_un_tiers">Rechargement par un tiers</string>
+    <string name="rechargement_sur_campus">Rechargement sur campus</string>
+    <string name="inscris_toi">Inscris-toi:</string>
+    <string name="inscription">Inscription</string>
+    <string name="accepter_conditions_generales">Conformément aux Conditions Générales, j\'accepte l\'utilisation de mes données personnelles pour lier mon compte étudiant et utiliser les services Izly.</string>
+    <string name="je_suis_boursier_du_crous">Je suis boursier du Crous</string>
+    <string name="telephone">Téléphone :</string>
+    <string name="email">Email :</string>
+    <string name="pays">Pays :</string>
+    <string name="ville">Ville :</string>
+    <string name="code_postal">Code postal:</string>
+    <string name="date_de_naissance">Date de naissance :</string>
+    <string name="adresse">Adresse :</string>
+    <string name="pr_nom">Prénom :</string>
+    <string name="nom">Nom :</string>
+    <string name="historique_des_transactions">Historique des transactions</string>
+    <string name="conditions_rgpd">En créant un compte Izly, vous consentez à la collecte et au traitement de vos informations conformément au Règlement Général sur la Protection des Données (RGPD).
+        Nous recueillons des données strictement nécessaires pour assurer le bon fonctionnement de nos services, y compris votre nom, prénom, adresse e-mail, et des informations liées à votre compte étudiant.
+        Ces données seront utilisées dans le seul but de faciliter vos transactions et d\'améliorer votre expérience utilisateur sur Izly.Nous nous engageons à ne pas partager vos informations avec des tiers sans votre consentement explicite, sauf lorsque cela est légalement requis. Vous avez le droit d\'accéder, de rectifier, de supprimer ou de limiter l\'utilisation de vos données à tout moment.
+        Pour en savoir plus sur notre politique de confidentialité et sur la manière dont nous traitons vos données, veuillez consulter notre politique de confidentialité complète sur notre site web.</string>
+    <string name="en_savoir_plus">En savoir plus.</string>
+    <string name="titre_rgpd">Conditions relatives au traitement des données personnelles</string>
+    <string name="ajoute_une_carte_bancaire">Ajoute une carte bancaire</string>
+    <string name="statut">Statut :</string>
+    <string name="voici_tes_informations">Voici tes informations :</string>
+    <string name="NORMAL">Normal</string>
+    <string name="BOURSIER">Boursier</string>
+    <string name="AUTRE">Autre</string>
+    <string name="les_crous_s_engagent">Les crous s\'engagent !</string>
+    <string name="texte_actu1">Les crous s\'engagent pour une alimentation de qualité, et vont plus loin en achetant des produits issus de filières responsables.</string>
+    <string name="titre_actu">Découvrez les actus du Crous : nouveautés, bons plans, services, etc.</string>
+</resources>

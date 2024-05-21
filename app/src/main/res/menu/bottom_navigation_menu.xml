@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_menu_accueil"
+        android:title="@string/main_menu_title_accueil"
+        android:icon="@drawable/ic_accueil_selected"/>
+    <item
+        android:id="@+id/main_menu_recharger"
+        android:title="@string/main_menu_title_recharger"
+        android:icon="@drawable/ic_menu_recharger"/>
+    <item
+        android:id="@+id/main_menu_actus"
+        android:title="@string/main_menu_title_actus"
+        android:icon="@drawable/ic_menu_actus"/>
+    <item
+        android:id="@+id/main_menu_parametres"
+        android:title="@string/main_menu_title_parametres"
+        android:icon="@drawable/ic_menu_parametres" />
+</menu>

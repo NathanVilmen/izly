@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView.Active" parent="TextAppearance.AppCompat.Small">
+        <item name="android:fontFamily">@font/nunito_black</item> <!-- Assurez-vous que le chemin est correct -->
+    </style>
+
+    <style name="BottomNavigationView.Inactive" parent="TextAppearance.AppCompat.Small">
+        <item name="android:fontFamily">@font/nunito_bold</item> <!-- Assurez-vous que le chemin est correct -->
+    </style>
+</resources>

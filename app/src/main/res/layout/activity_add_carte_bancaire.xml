@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AddCarteBancaireActivity">
+
+    <ImageButton
+        android:id="@+id/retour_bouton_add_carte_bancaire"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_fleche_retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titre_add_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="@string/ajoute_une_carte_bancaire"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numero_add_cb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Numéro :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nom_add_cb_tv" />
+
+    <EditText
+        android:id="@+id/numero_add_cb_et"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/numero_add_cb_tv"
+        app:layout_constraintTop_toBottomOf="@+id/nom_add_cb_et" />
+
+    <TextView
+        android:id="@+id/nom_add_cb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Nom :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retour_bouton_add_carte_bancaire" />
+
+    <EditText
+        android:id="@+id/nom_add_cb_et"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/nom_add_cb_tv"
+        app:layout_constraintTop_toBottomOf="@+id/titre_add_cb" />
+
+    <TextView
+        android:id="@+id/ccv_add_cb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="CCV :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numero_add_cb_tv" />
+
+    <EditText
+        android:id="@+id/ccv_add_cb_et"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/ccv_add_cb_tv"
+        app:layout_constraintTop_toBottomOf="@+id/numero_add_cb_et" />
+
+    <TextView
+        android:id="@+id/date_fin_add_cb_tv"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Date de fin de validité :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ccv_add_cb_tv" />
+
+    <EditText
+        android:id="@+id/date_fin_add_cb_et"
+        android:layout_width="184dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito_regular"
+        android:inputType="datetime"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/date_fin_add_cb_tv"
+        app:layout_constraintTop_toBottomOf="@+id/ccv_add_cb_et" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmer_bouton_add_cb"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Confirmer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_fin_add_cb_et"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

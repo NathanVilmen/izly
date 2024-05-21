@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.RechargementActivity">
+
+    <ImageButton
+        android:id="@+id/retour_bouton_rechargement"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_fleche_retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rechargez_compte_rechargement_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Rechargez votre compte Izly !"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type_rechargement_rechargement_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Rechargement par Carte Bancaire"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rechargez_compte_rechargement_tv" />
+
+    <ImageView
+        android:id="@+id/img_cercle_bleu_rechargement"
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/ic_cercle_bleu_ombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rechargez_compte_rechargement_tv" />
+
+    <EditText
+        android:id="@+id/solde_rechargement_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:inputType="number"
+        android:text="0,00"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@id/img_cercle_bleu_rechargement"
+        app:layout_constraintEnd_toEndOf="@id/img_cercle_bleu_rechargement"
+        app:layout_constraintStart_toStartOf="@id/img_cercle_bleu_rechargement"
+        app:layout_constraintTop_toTopOf="@id/img_cercle_bleu_rechargement"
+        app:layout_constraintVertical_bias="0.5"
+        android:autofillHints="0,00" />
+
+    <ImageButton
+        android:id="@+id/bouton_10_rechargement"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rechargement_10_euros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solde_rechargement_et" />
+
+    <ImageButton
+        android:id="@+id/bouton_20_rechargement"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rechargement_20_euros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bouton_10_rechargement" />
+
+    <ImageButton
+        android:id="@+id/bouton_30_rechargement"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rechargement_30_euros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/bouton_20_rechargement"
+        app:layout_constraintTop_toTopOf="@+id/bouton_40_rechargement" />
+
+    <ImageButton
+        android:id="@+id/bouton_40_rechargement"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rechargement_40_euros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bouton_10_rechargement"
+        app:layout_constraintTop_toBottomOf="@+id/solde_rechargement_et" />
+
+    <TextView
+        android:id="@+id/carte_a_debiter_rechargement_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Carte à débiter :"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bouton_20_rechargement" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ajouter_une_cb_bouton_rechargement"
+        android:layout_width="290dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Ajouter une carte bancaire"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmer_bouton_recharger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCartesBancaires"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/ic_ajouter_une_cb_rechargement"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_ajouter_cb"
+        app:layout_constraintBottom_toBottomOf="@id/ajouter_une_cb_bouton_rechargement"
+        app:layout_constraintStart_toStartOf="@id/ajouter_une_cb_bouton_rechargement"
+        app:layout_constraintTop_toTopOf="@id/ajouter_une_cb_bouton_rechargement"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmer_bouton_recharger"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Confirmer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCartesBancaires"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/ic_euro_rechargement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="€"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cercle_bleu_rechargement"
+        app:layout_constraintStart_toEndOf="@+id/solde_rechargement_et"
+        app:layout_constraintTop_toTopOf="@+id/img_cercle_bleu_rechargement" />
+
+    <Spinner
+        android:id="@+id/spinnerCartesBancaires"
+        android:layout_width="324dp"
+        android:layout_height="50dp"
+        android:background="@color/fond_bouton"
+        android:backgroundTint="@color/fond_bouton"
+        app:layout_constraintStart_toStartOf="@+id/carte_a_debiter_rechargement_tv"
+        app:layout_constraintTop_toBottomOf="@+id/carte_a_debiter_rechargement_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

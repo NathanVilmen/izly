@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.PageUtilisateurActivity">
+
+    <ImageButton
+        android:id="@+id/retour_bouton_utilisateur"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_fleche_retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_uilisateur_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Nathan Vilmen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mes_infos_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Mes informations"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_uilisateur_tv"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activite_du_mois_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Activités du dernier mois"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mes_infos_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tous_les_releves_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Tous les relevés"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activite_du_mois_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resilier_mon_contrat_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Résilier mon contrat"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tous_les_releves_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/voir_mes_supports_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Voir mes supports"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resilier_mon_contrat_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/voir_mes_evenements_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Voir mes événements"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voir_mes_supports_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deconnexion_bouton_utilisateur"
+        android:layout_width="376dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Déconnexion"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fond_bouton"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voir_mes_evenements_bouton_utilisateur"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/ic_deconnexion_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_deconnexion"
+        app:layout_constraintBottom_toBottomOf="@id/deconnexion_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/deconnexion_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/deconnexion_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_evements_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_evenement"
+        app:layout_constraintBottom_toBottomOf="@id/voir_mes_evenements_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/voir_mes_evenements_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/voir_mes_evenements_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_balance_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_balance"
+        app:layout_constraintBottom_toBottomOf="@id/voir_mes_supports_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/voir_mes_supports_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/voir_mes_supports_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_resilier_contrat_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_resilier_contrat"
+        app:layout_constraintBottom_toBottomOf="@id/resilier_mon_contrat_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/resilier_mon_contrat_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/resilier_mon_contrat_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_tous_les_releves_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_tous_les_releves"
+        app:layout_constraintBottom_toBottomOf="@id/tous_les_releves_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/tous_les_releves_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/tous_les_releves_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_sablier_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_sablier"
+        app:layout_constraintBottom_toBottomOf="@id/activite_du_mois_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/activite_du_mois_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/activite_du_mois_bouton_utilisateur" />
+
+    <ImageView
+        android:id="@+id/ic_mes_infos_utilisateur"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_mes_informations"
+        app:layout_constraintBottom_toBottomOf="@id/mes_infos_bouton_utilisateur"
+        app:layout_constraintStart_toStartOf="@id/mes_infos_bouton_utilisateur"
+        app:layout_constraintTop_toTopOf="@id/mes_infos_bouton_utilisateur" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

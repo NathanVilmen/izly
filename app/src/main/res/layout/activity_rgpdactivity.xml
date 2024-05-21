@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.RGPDActivity">
+
+    <ImageButton
+        android:id="@+id/retour_bouton_rgpd"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_fleche_retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titre_rgpd_tv"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="@string/titre_rgpd"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/conditions_rgpd_tv"
+        android:layout_width="335dp"
+        android:layout_height="533dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_regular"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/conditions_rgpd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre_rgpd_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/img_fond_bleu_recharger"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_bg_bleu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seletion_moyen_paiement_recharger_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/veuillez_choisir_un_moyen_de_rechargement"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_fond_bleu_recharger" />
+
+        <ImageView
+            android:id="@+id/logo_izly_recharger"
+            android:layout_width="99dp"
+            android:layout_height="51dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_izly"
+            app:layout_constraintBottom_toBottomOf="@+id/img_fond_bleu_recharger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/virement_instantane_bouton_recharger"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/virement_instantane_partir_de_5_euros"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seletion_moyen_paiement_recharger_tv"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_virement_recharger"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_virement"
+            app:layout_constraintBottom_toBottomOf="@+id/virement_instantane_bouton_recharger"
+            app:layout_constraintStart_toStartOf="@+id/virement_instantane_bouton_recharger"
+            app:layout_constraintTop_toTopOf="@+id/virement_instantane_bouton_recharger" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/carte_bancaire_bouton_recharger"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/carte_bancaire"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/virement_instantane_bouton_recharger"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_carte_bancaire_recharger"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_carte_bancaire"
+            app:layout_constraintBottom_toBottomOf="@+id/carte_bancaire_bouton_recharger"
+            app:layout_constraintStart_toStartOf="@+id/carte_bancaire_bouton_recharger"
+            app:layout_constraintTop_toTopOf="@+id/carte_bancaire_bouton_recharger" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recharger_par_tiers_bouton_recharger"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/rechargement_par_un_tiers"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carte_bancaire_bouton_recharger"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_trois_personnes_recharger"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_trois_personnes"
+            app:layout_constraintBottom_toBottomOf="@+id/recharger_par_tiers_bouton_recharger"
+            app:layout_constraintStart_toStartOf="@+id/recharger_par_tiers_bouton_recharger"
+            app:layout_constraintTop_toTopOf="@+id/recharger_par_tiers_bouton_recharger" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recharger_campus_bouton_recharger"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/rechargement_sur_campus"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharger_par_tiers_bouton_recharger"
+            app:layout_constraintVertical_bias="0.016"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_maps_recharger"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_maps"
+            app:layout_constraintBottom_toBottomOf="@+id/recharger_campus_bouton_recharger"
+            app:layout_constraintStart_toStartOf="@+id/recharger_campus_bouton_recharger"
+            app:layout_constraintTop_toTopOf="@+id/recharger_campus_bouton_recharger" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

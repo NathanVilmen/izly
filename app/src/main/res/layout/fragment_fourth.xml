@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.FourthFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/img_fond_bleu_parametres"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_bg_bleu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_izly_parametres"
+            android:layout_width="99dp"
+            android:layout_height="51dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_izly"
+            app:layout_constraintBottom_toBottomOf="@+id/img_fond_bleu_parametres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/virer_vers_ma_banque_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Virer vers ma banque"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_fond_bleu_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_banque_parametres"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_banque"
+            app:layout_constraintBottom_toBottomOf="@+id/virer_vers_ma_banque_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/virer_vers_ma_banque_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/virer_vers_ma_banque_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/voir_mes_cb_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Voir mes cartes bancaires"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/virer_vers_ma_banque_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_carte_bancaire_parametres"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_carte_bancaire"
+            app:layout_constraintBottom_toBottomOf="@+id/voir_mes_cb_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/voir_mes_cb_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/voir_mes_cb_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/modifier_coordonnees_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Modifier mes coordonnées"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voir_mes_cb_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_iban_parametres"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_iban"
+            app:layout_constraintBottom_toBottomOf="@+id/modifier_coordonnees_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/modifier_coordonnees_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/modifier_coordonnees_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/modifier_code_secret_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Modifier le code secret"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifier_coordonnees_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_code_secret_parametres"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_code_secret"
+            app:layout_constraintBottom_toBottomOf="@+id/modifier_code_secret_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/modifier_code_secret_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/modifier_code_secret_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/faire_opposition_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Faire opposition à mon compte"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifier_code_secret_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_croix_parametres"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_croix"
+            app:layout_constraintBottom_toBottomOf="@+id/faire_opposition_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/faire_opposition_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/faire_opposition_bouton_parametres"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/besoin_aide_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Besoin d'aide"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faire_opposition_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_besoin_aide_parametres"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_besoin_aide"
+            app:layout_constraintBottom_toBottomOf="@+id/besoin_aide_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/besoin_aide_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/besoin_aide_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/a_propos_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="À propos"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/besoin_aide_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_info_parametres"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_info_noir"
+            app:layout_constraintBottom_toBottomOf="@+id/a_propos_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/a_propos_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/a_propos_bouton_parametres" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deconnexion_bouton_parametres"
+            android:layout_width="376dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Déconnexion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:backgroundTint="@color/fond_bouton"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a_propos_bouton_parametres"
+            app:rippleColor="#33AAAAAA"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:id="@+id/ic_deconnexion_parametres"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_deconnexion"
+            app:layout_constraintBottom_toBottomOf="@+id/deconnexion_bouton_parametres"
+            app:layout_constraintStart_toStartOf="@+id/deconnexion_bouton_parametres"
+            app:layout_constraintTop_toTopOf="@+id/deconnexion_bouton_parametres" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
